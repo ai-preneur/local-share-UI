@@ -1,0 +1,50 @@
+{
+  "name": "Local Share",
+  "short_name": "LocalShare",
+  "description": "Instantly share files, text and links between devices on the same WiFi. No internet, no account, no install required.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0d14",
+  "theme_color": "#22d3a0",
+  "orientation": "any",
+  "categories": ["utilities", "productivity"],
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "Local Share – Share files over WiFi"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Local Share",
+      "short_name": "Share",
+      "description": "Open the Local Share app",
+      "url": "/",
+      "icons": [{ "src": "/favicon-96.png", "sizes": "96x96" }]
+    }
+  ]
+}
