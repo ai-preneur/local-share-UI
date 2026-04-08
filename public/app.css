@@ -534,38 +534,6 @@ footer.footer-main a:hover { color: var(--accent); text-decoration: underline; }
 }
 .donate-btn:hover { filter: brightness(.9); }
 
-/* ── Ad footer ────────────────────────────────────────────────────────────────── */
-footer.footer-ad {
-  flex-shrink: 0;
-  min-height: 54px;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 14px;
-  font-size: var(--sz-xs);
-  color: var(--text3);
-  gap: 10px;
-  position: relative;
-}
-.ad-label {
-  position: absolute; top: 4px; left: 8px;
-  font-size: 9px; text-transform: uppercase;
-  letter-spacing: .5px; color: var(--text3);
-  font-family: var(--font-mono);
-}
-.ad-slot {
-  width: 100%; max-width: 728px;
-  min-height: 40px;
-  display: flex; align-items: center; justify-content: center;
-  border: 1px dashed var(--border2);
-  border-radius: var(--radius-sm);
-  color: var(--text3); font-size: var(--sz-xs);
-  font-family: var(--font);
-  background: var(--surface2);
-  text-align: center; padding: 6px;
-}
 
 /* ── LAN trust warning banner ─────────────────────────────────────────────────── */
 .lan-warning {
@@ -645,7 +613,6 @@ footer.footer-ad {
   .msg { max-width: 90%; }
   #name-input { width: 85px; }
   footer.footer-main { font-size: 10px; padding: 5px 10px; }
-  footer.footer-ad { min-height: 50px; }
   /* donate-btn stays visible on mobile — just shrink it */
   .donate-btn { font-size: 10px; padding: 2px 6px; }
 }
@@ -661,17 +628,3 @@ footer.footer-ad {
 .link-domain { display: block; font-size: 0.75em; opacity: 0.65; margin-top: 3px; font-family: var(--font-mono); }
 
 .file-card-error { padding: 8px 12px; color: var(--danger); font-size: var(--sz-sm); border: 1px solid var(--danger); border-radius: var(--radius-sm); background: var(--danger-bg); }
-
-/* Default to a standard slim mobile banner (320x50) */
-.local-share-ad { 
-  width: 320px; 
-  height: 50px; 
-}
-
-/* On tablets and desktops (768px and wider), scale up to standard leaderboard (728x90) */
-@media (min-width: 768px) {
-  .local-share-ad { 
-    width: 728px; 
-    height: 90px; 
-  }
-}
